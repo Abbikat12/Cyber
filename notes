@@ -1,0 +1,36 @@
+Practical Binary Analysis
+
+Preface: "Binary Analysis is one of the most fascinating and challenging topics in hacking and computer science."
+
+Malware Analysis:
+    Static Analysis
+        Can analyze whole binary in one go, lacks runtime state info
+    Dynamic Analysis
+        analysis as the program executes, simplier than static analysis, lacks interesting parts of the     
+        program
+        
+Challenges to Malware Analysis:
+    No symbolic information
+        binaries are often stripped of symbols, making it much harder to understand the code
+    No type information
+        binary does not explicity state the typing
+    No high-level abstractions
+        compilers throw away high-level constructs, so binaries appear as huge blobs of code and data
+    Mixed code and data
+        contain data fragments mixed in with the executable code (some compilers do this more than others, VS 
+        is notorious for mixing code and data). Easy to accidentally interpret data as code or vice versa
+    Location-dependent code and data
+        any kind of code or data modification is extremely challenging and prone to breaking the binaries
+
+What to know
+    Reasonable level of comfort programming in C and C++ and Python
+    Basic working knowledge of OS internals
+    Basic knowlege of linux (BASH)
+    x86,x86/64 assembly [READ APPENDIX A]
+        Like C but pushed through gcc <think Marie Assembly from COSC 290> 
+        MASM
+        
+Book
+        
+    
+

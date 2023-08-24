@@ -46,3 +46,5 @@ Triada
 Wiper Malware
 burn data off of target computer
 WhisperGate
+
+Psuedo Code:

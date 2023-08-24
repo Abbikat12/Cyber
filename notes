@@ -30,7 +30,99 @@ What to know
         Like C but pushed through gcc <think Marie Assembly from COSC 290> 
         MASM
         
-Book
+Possible filetypes and languages to work with
+LNK, WMI, Powershell, macros, vbs files
+	visual basic scripts
+		Can execute scripts to perform malicious activity
+		May need some fiddling with windows permissions to execute dangerous scripts
+	word document macros
+		Can hide ZIPs and ATTACHMENTS in emails
+	Powershell scripts
+		.NET
+			New-Object -TypeName System.Diagnostics.EventLog
+		COM
+			New-Object -ComObject WScript.Shell
+			New-Object -ComObject WScript.Network
+			New-Object -ComObject Scripting.Dictionary
+			New-Object -ComObject Scripting.FileSystemObject
+	Windows Management Instrumentation file
+			Set objLocator = CreateObject("WbemScripting.SWbemLocator")
+			Set objService = objLocator.ConnectServer(".", "root\cimv2")
+
+		' Second example: implicitly uses the local compuer (.) and default namespace ("root\cimv2")
+			Set objWMIService = GetObject("winmgmts:")
+
+Safe environments to examine and create malware:
+	VMWare
+	Virtual Box
+	
+Linux environments to look into
+	KALI
+	Ubuntu
+	Centos
+	KDE
+
+Resources for detection and mitigation:
+	CVEs - Common Vulnerabilities and Exposures
+	NVD - National Vulnerability Database
+		MITRE - https://cve.mitre.org
+		NIST  - https://nvd.nist.gov/general/cve-process
+	FBI - good for friends and families that are not familiar with scams and spams.
+	https://www.fbi.gov/how-we-can-help-you/safety-resources/scams-and-safety/on-the-internet#:~:text=If%20You%20Spot%20a%20Scam%20Message%2C%20Report%20It%20to%20the%20FTC&text=Report%20it%20to%20the%20Federal,is%20most%20likely%20a%20scam.
+
+Cool CVEs
+	Stuxnet
+		https://nvd.nist.gov/vuln/detail/CVE-2010-2772
+
+Resources for defending:
+	https://github.com/tom0li/collection-document/blob/master/Blue%20Team%20Field%20Manual.pdf.
+
+Shopping List
+	https://www.raspberrypi.com
+		ugh, out of stock:
+			https://rpilocator.com
+	There is nothing wrong with some money:
+		https://blog.adafruit.com/2015/03/20/stock-ticker-for-the-terminal-on-a-raspberry-pi-raspberry_pi-piday-raspberrypi/
+
+
+Clean Coding:
+	https://www.freecodecamp.org/news/clean-coding-for-beginners/
+		Note: keep labels neat and precise
+			Do not overclutter
+			Organize the code blocks, explain it carefully
+			Do not make it messy
+			Track variables and changes
+				tracking variable means that data can be traced in case of data leaks and potential bugs and vulnerability
+			Coding with GOOD, GOOOOOOOD extra steps
+		Examples:
+			BAD example: var1, var2 //variables
+			GOOD example: savingsAmount, checkingsAmount //these variables will follow the database row following the UID of each account
+
+Good mantras for cybersecurity
+	CIA = Cofidentiality, Integrity, and Access
+			Privacy, is the package in tact, and do the right people have access to the data?
+		Examples:
+			2 factor, GPS location confirmation, temporary codes, rotating codes for entry
+			Are the receipts good, does both the receiving and transactional end match up?
+			Is the info center or the ATM accessible to people?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
     
 

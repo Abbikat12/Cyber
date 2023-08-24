@@ -136,15 +136,21 @@ Note: What is the difference between a PE and ELF file?
 	libbfd or BFD: Binary File Descriptor
 		"BFD is split into two parts: the front end, and the back ends 
 		(one for each object file format).
-			• The front end of BFD provides the interface to the user. 
+			• "The front end of BFD provides the interface to the user. 
 				It manages memory and various canonical data structures. 
 				The front end also decides which back end to use and when 
-				to call back end routines.
+				to call back end routines."
+			• Interface that handles memory and data structures, most 
+				importantly it points to the back end to use and when to 
+				call back end routines
 			• The back ends provide BFD its view of the real world. Each 
 				back end provides a set of calls which the BFD front end 
 				can use to maintain its canonical form. The back ends also 
 				may keep around information for their own use, for greater 
 				efficiency."
+			• Back end shows the display output, provides the set of calls
+				for the BFD front end. local data handling happens within
+				the backend
 
 https://sourceware.org/binutils/docs/bfd.pdf
 

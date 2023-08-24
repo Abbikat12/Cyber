@@ -107,8 +107,46 @@ Good mantras for cybersecurity
 			Is the info center or the ATM accessible to people?
 
 
+Linux commands
+	strace
+		system calls
+
+	ltrace
+		library calls
 
 
+
+gcc review:
+#This generates a binary executable
+gcc hello.c
+#note: a.out is the default
+file a.out
+
+#-o switch to gcc, bypasses the a.out into the name of choosing
+gcc hello.c -o output.out
+
+The output of this file is a ELF 64-bit LSB executable
+#I don't quite understand this part, but I know it works
+
+
+Note: What is the difference between a PE and ELF file?
+	ELF is linux native
+	PE is windows native
+
+	libbfd or BFD: Binary File Descriptor
+		"BFD is split into two parts: the front end, and the back ends 
+		(one for each object file format).
+			• The front end of BFD provides the interface to the user. 
+				It manages memory and various canonical data structures. 
+				The front end also decides which back end to use and when 
+				to call back end routines.
+			• The back ends provide BFD its view of the real world. Each 
+				back end provides a set of calls which the BFD front end 
+				can use to maintain its canonical form. The back ends also 
+				may keep around information for their own use, for greater 
+				efficiency."
+
+https://sourceware.org/binutils/docs/bfd.pdf
 
 
 

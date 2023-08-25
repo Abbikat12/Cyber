@@ -1,7 +1,13 @@
-// this is an example of a spyware program that I would create. 
+// spyware example
+// code block that prompts the user to enter their credentials in C++
+// prompts the user to enter their credentials
+// gathering information about the user's credentials.
+cout << "Please enter your username to log into your account: ";
+cin >> userName; 
 
-cout << "Please enter your username to login to your account";
-cin << UserName;
+// forwarding the information to a third party without consent...
+// how do I program that? 
+
 
 
 
